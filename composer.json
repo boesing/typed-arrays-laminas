@@ -1,0 +1,21 @@
+{
+    "name": "boesing/typed-arrays-laminas",
+    "description": "This package contains glue code for laminas/mezzio projects",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": "^7.3 || ~8.0.0",
+        "boesing/typed-arrays": "^0.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Boesing\\TypedArrays\\Laminas\\": "src/"
+        }
+    },
+    "extra": {
+        "laminas": {
+            "config-provider": "Boesing\\TypedArrays\\Laminas\\ConfigProvider",
+            "module": "Boesing\\TypedArrays\\Laminas"
+        }
+    }
+}
